@@ -117,6 +117,8 @@ button.btn-primary.Round-btn {
     text-align: center;
     border-bottom: 1px solid rgba(241, 241, 241, 1.00);
     border-top: 1px solid rgba(241, 241, 241, 1.00);
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .sponsors-brand img {
@@ -284,10 +286,6 @@ p.footer-description {
         flex-direction: column-reverse;
         text-align: center;
     }
-    .sponsors-brand {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
     .popular-collections {
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
@@ -315,10 +313,6 @@ p.footer-description {
         text-align: center;
     }
  
-    .sponsors-brand {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
     .popular-collections {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
