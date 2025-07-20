@@ -90,11 +90,16 @@ header.header-container {
     margin-bottom: 20px;
 }
 .banner-image {
-    width: 475px;
+    width: 100%;
+    max-width: 475px;
     background-image: url(../images/CircleDesign.svg);
     background-repeat: no-repeat;
     background-position: top right, bottom right;
     height: 475px;
+}
+.banner-image img {
+    width: 100%;
+    height: auto;
 }
 button.btn-primary.Round-btn {
     border-radius: 50px;
@@ -143,9 +148,11 @@ h2.collection-title {
     border-radius: 5px;
 }
 
-.item-img {
-    max-width: 300px;
+.item-img img{
+    width: 100%;
+    height: auto;
 }
+
 h1.item-name {
     font-size: 28px;
     font-weight: 500;
@@ -263,23 +270,60 @@ p.footer-description {
 /* Responsive Media Query style Start */
 @media screen and (max-width: 576px) {
     .navbar, 
-    .nav-links {
+    .nav-links, 
+    .banner-area, 
+    .popular-collections, 
+    .feature-products{
         flex-direction: column;
     }
-    /* .team-img-container{
-        grid-template-columns: 1fr;
+    .nav-item {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .banner-area, .feature-products {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .sponsors-brand {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .popular-collections {
+        grid-template-columns: repeat(1, 1fr);
         justify-items: center;
-    }     */
+    }
+    button.btn-primary.see-more-btn {
+        margin: 20px auto;
+    }
 
 }
 /* Medium Device Responsive */
 @media screen and (min-width: 576px) and (max-width: 992px) { 
-    .teams{
+    .navbar, 
+    .nav-links, 
+    .banner-area, 
+    .popular-collections, 
+    .feature-products{
         flex-direction: column;
     }
-    /* .facts-container, .sponsors-brand{
+    .nav-item {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .banner-area, .feature-products {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+ 
+    .sponsors-brand {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .popular-collections {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
-    }   */
-
+    }
+    button.btn-primary.see-more-btn {
+        left: 0;
+    }
 }
