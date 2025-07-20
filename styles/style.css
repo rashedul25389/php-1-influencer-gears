@@ -1,0 +1,285 @@
+/* Embed Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Google Font CSS */
+.poppins-fonts {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter-fonts {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.roboto-fonts {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+/* Common Style CSS Start*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    color: #3A3A3A;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+}
+.display-flex{
+    display: flex;
+}
+
+/* Common Style CSS End */
+
+
+/* Header Section Style Start */
+
+header.header-container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+.brand{
+    font-size: 1.5rem;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3A3A3A;
+}
+            /* Banner Style */
+.banner-area{
+    align-items: center;
+    margin-top: 35px;
+    gap: 130px;
+}
+.banner-content{
+    max-width: 582px;
+}
+.banner-title {
+    font-size: 3.25rem;
+    line-height: 70px;
+}
+.banner-description {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.banner-image {
+    width: 475px;
+    background-image: url(../images/CircleDesign.svg);
+    background-repeat: no-repeat;
+    background-position: top right, bottom right;
+    height: 475px;
+}
+button.btn-primary.Round-btn {
+    border-radius: 50px;
+}
+/* Header Section Style End */
+
+/* Sponsors Section Style Start */
+.sponsors-container {
+    max-width: 1110px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+.sponsors-brand {
+    text-align: center;
+    border-bottom: 1px solid rgba(241, 241, 241, 1.00);
+    border-top: 1px solid rgba(241, 241, 241, 1.00);
+}
+
+.sponsors-brand img {
+    padding: 30px;
+}
+/* Sponsors Section Style End */
+
+/* Product Collection Section Start */
+.collections-container{
+    max-width: 1050px;
+    margin: 0 auto;
+    margin-bottom: 140px;
+}
+h2.collection-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.popular-collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.Collection-items {
+    max-width: 330px;
+    padding: 15px;
+    box-shadow: 0 0px 40px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.item-img {
+    max-width: 300px;
+}
+h1.item-name {
+    font-size: 28px;
+    font-weight: 500;
+    color: #18191F;
+}
+
+h5.item-price {
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+    margin: 5px 0px;
+    font-family: 'inter';
+}
+
+span.rating-star {
+    font-size: 14px;
+    font-weight: 700;
+    color: #5E6366;
+    font-family: 'Roboto';
+}
+
+p.item-description {
+    font-size: 14px;
+    color: #787885;
+    font-weight: 700;
+    font-family: 'Inter';
+    margin-top: 8px;
+}
+
+button.btn-primary.see-more-btn {
+    background: none;
+    color: #E02C6D;
+    position: absolute;
+    right: 208px;
+    margin-top: 40px;
+}
+
+button.btn-primary.see-more-btn img {
+    width: 16px;
+    height: 14px;
+    margin-top: 2px;
+    margin-left: 8px;
+}
+/* Product Collection Section End */
+
+/* Feature Section Style Start */
+.feature-products {
+    width: 100%;
+    max-width: 1110px;
+    align-items: center;
+    margin: 0 auto;
+    gap: 96px;
+    margin-bottom: 100px;
+}
+
+.feature-content {
+    max-width: 610px;
+    color: #6C6C6C;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+h1.feature-title {
+    font-size: 38px;
+    color: #0A0826;
+}
+
+p.feature-description {
+    max-width: 500px;
+}
+
+.btn-primary {
+    background: #E02C6D;
+    border: none;
+    color: #FFFFFF;
+    padding: 10px 24px;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-right: 50px;
+}
+
+.btn-primary img {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    margin-top: -3px;
+    margin-left: 5px;
+}
+
+/* Feature Section Style End */
+
+
+/* Footer Section Style Start */
+footer.footer-bg {
+    background: #0A0826;
+}
+.footer-content {
+    padding: 50px;
+    text-align: center;
+    color: #D9DBE1;
+    font-size: .85rem;
+    font-weight: 700;
+}
+h3.footer-title {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+p.footer-description {
+    margin-bottom: 1.5rem;
+}
+/* Footer Section Style End */
+
+
+
+/* Responsive Media Query style Start */
+@media screen and (max-width: 576px) {
+    .navbar, 
+    .nav-links {
+        flex-direction: column;
+    }
+    /* .team-img-container{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }     */
+
+}
+/* Medium Device Responsive */
+@media screen and (min-width: 576px) and (max-width: 992px) { 
+    .teams{
+        flex-direction: column;
+    }
+    /* .facts-container, .sponsors-brand{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }   */
+
+}
